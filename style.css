@@ -1,0 +1,24 @@
+#dice{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#diceroll{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: none;
+    font-size: 20px;
+    background-color: rgb(22, 22, 22);
+    color: #eee;
+    transition: all 0.5s;
+}
+
+#diceroll:hover{
+    background-color: rgb(46, 46, 46);
+    font-size: 22px;
+}
