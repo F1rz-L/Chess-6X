@@ -11,14 +11,18 @@
     <div class="controlSection">
         <img src="" width="100px" id="dice">
         <br>
-        <button id="attackButton">Attack</button>
-        <button id="specialButton">...S1...</button>
+        <button id="attackButton" onclick="attack()">Attack</button>
+        <button id="specialButton" >...S1...</button>
     </div>
 
     <div class="displaySection">
-        <div class="playerHealthbar"></div>
+        <div class="playerHealthbar">
+            <div class="playerHealth"></div>
+        </div>
         <img src="/chess/chess1.svg" alt="" class="enemyAvatar">
-        <div class="enemyHealthbar"></div>
+        <div id="enemyHealthbar">
+            <div id="enemyHealth"></div>
+        </div>
     </div>
     
 </body>
