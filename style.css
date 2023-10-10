@@ -1,24 +1,33 @@
 #dice{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 85%;
+    left: 20%;
     transform: translate(-50%, -50%);
+}
+
+button{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #eee;
+    background-color: rgb(22, 22, 22);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0px #999;
+}
+
+button:active{
+    background-color: #3b3b3b;
+    padding: 17.5px 27.5px;
+    /* box-shadow: 10px 10px #3c3c3c; */
+    /* transform: translateY(4px); */
 }
 
 #diceroll{
     position: absolute;
-    top: 65%;
-    left: 50%;
+    top: 80%;
+    left: 30%;
     transform: translate(-50%, -50%);
-
-    border: none;
-    font-size: 20px;
-    background-color: rgb(22, 22, 22);
-    color: #eee;
-    transition: all 0.5s;
-}
-
-#diceroll:hover{
-    background-color: rgb(46, 46, 46);
-    font-size: 22px;
 }
