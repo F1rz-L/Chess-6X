@@ -1,8 +1,10 @@
 #dice{
     position: absolute;
     top: 85%;
-    left: 20%;
+    left: 65%;
     transform: translate(-50%, -50%);
+    transform-origin: center;
+    transition: all 0.5s;
 }
 
 button{
@@ -21,12 +23,18 @@ button{
 button:active{
     background-color: #3b3b3b;
     padding: 17.5px 27.5px;
-    /* box-shadow: 10px 10px #3c3c3c; */
-    /* transform: translateY(4px); */
 }
 
+.playerAvatar{
+    position: absolute;
+    top: 75%;
+    left: 8%;
+    transform: translate(-50%, -50%);
 
-.playerHealthbar{
+    width: 250px;
+}
+
+#playerHealthbar{
     position: absolute;
     top: 70%;
     left: 35%;
@@ -37,7 +45,7 @@ button:active{
     height: 15px;
 }
 
-.playerHealth{
+#playerHealth{
     height: 100%;
 	width: 100%;
     background-color: greenyellow;
@@ -72,13 +80,13 @@ button:active{
 #attackButton{
     position: absolute;
     top: 79%;
-    left: 30%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }
 
 #specialButton{
     position: absolute;
     top: 91%;
-    left: 30%;
+    left: 55%;
     transform: translate(-50%, -50%);
 }

@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dicer</title>
-    <link rel="stylesheet" href="/style.css">
     <script src="/javascript.js" async defer></script>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <div class="controlSection">
         <img src="" width="100px" id="dice">
         <br>
         <button id="attackButton" onclick="attack()">Attack</button>
-        <button id="specialButton" >...S1...</button>
+        <button id="specialButton" onclick="block()">Block</button>
     </div>
 
     <div class="displaySection">
-        <div class="playerHealthbar">
-            <div class="playerHealth"></div>
+        <img src="/chess/chess6.svg" alt="" class="playerAvatar">
+        <div id="playerHealthbar">
+            <div id="playerHealth"></div>
         </div>
         <img src="/chess/chess1.svg" alt="" class="enemyAvatar">
         <div id="enemyHealthbar">
