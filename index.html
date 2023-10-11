@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dicer</title>
+    <title>Chess 6X</title>
     <script src="/javascript.js" async defer></script>
     <link rel="stylesheet" href="/style.css">
+    <link rel="shortcut icon" href="/dice/dice6.svg" type="image/x-icon">
 </head>
 <body>
     <div class="controlSection">
@@ -23,6 +27,10 @@
         <img src="/chess/chess1.svg" alt="" class="enemyAvatar">
         <div id="enemyHealthbar">
             <div id="enemyHealth"></div>
+        </div>
+        <div id="gameOverScreen">
+            <h1 id="gameOverText"></h1>
+            <button id="playAgain" onclick="gameOverHide()">Play Again</button>
         </div>
     </div>
     

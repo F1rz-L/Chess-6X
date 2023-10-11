@@ -1,9 +1,15 @@
-let enemyHP = 50
-let playerHP = 50
+let enemyHP = 50;
+let playerHP = 50;
+let momentum;
 let diceDisplay = document.querySelector("#dice");
+let gameOverScreen = document.querySelector("#gameOverScreen")
+let gameOverText = document.querySelector("#gameOverText")
 
+function newTurn(){
+    enemyTurn();
+}
 
-function attack(){
+function attack(a){
     let playerAttackRandom = Math.floor(Math.random() * 6 + 1)
     enemyHP -= playerAttackRandom;
 
@@ -14,7 +20,7 @@ function attack(){
         gameOver();
     }
 
-    enemyTurn();
+    newTurn();
 }
 
 function enemyTurn(a){
@@ -28,7 +34,7 @@ function enemyTurn(a){
     playerHealth.style.width = playerHP*2 + "%";
 
     if(playerHP<1){
-        gameOver();
+        gameOver("lose");
     }
 }
 
@@ -36,8 +42,22 @@ function block(){
     enemyTurn("block");
 }
 
-function gameOver(){
-    alert("Game Over!");
+function gameOver(a){
+    if(a==="lose"){
+        gameOverScreen.style.display="block"
+        gameOverText.innerHTML = "You Lost!"
+        playerHealth.style.width = "0%"
+    }
+    
+    else{
+        gameOverScreen.style.display="block"
+        gameOverText.innerHTML = "You Win!"
+        enemyHealth.style.width = "0%";
+    }
+}
+
+function gameOverHide(){
+    gameOverScreen.style.display = "none"
     enemyHP=50;
     playerHP=50;
     enemyHealth.style.width = "100%";

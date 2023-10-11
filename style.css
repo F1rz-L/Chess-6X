@@ -1,3 +1,7 @@
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 #dice{
     position: absolute;
     top: 85%;
@@ -8,7 +12,9 @@
 }
 
 button{
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
+    height: 60px;
+    width: 120px;
     font-size: 24px;
     text-align: center;
     cursor: pointer;
@@ -18,11 +24,14 @@ button{
     border: none;
     border-radius: 10px;
     box-shadow: 0 0px #999;
+    transition: all 0.09s;
 }
 
 button:active{
     background-color: #3b3b3b;
-    padding: 17.5px 27.5px;
+    /* padding: 17.5px 27.5px; */
+    height: 70px;
+    width: 130px;
 }
 
 .playerAvatar{
@@ -89,4 +98,35 @@ button:active{
     top: 91%;
     left: 55%;
     transform: translate(-50%, -50%);
+}
+
+#gameOverScreen{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #3b3b3b;
+    
+    padding: 12% 20%;
+    display: none;
+    border-radius: 4%;
+}
+
+#gameOverText{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #eee;
+}
+
+#playAgain{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: lightgreen;
+    color: #3b3b3b;
 }
