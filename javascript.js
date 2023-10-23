@@ -2,7 +2,7 @@ let enemyHP = 50;
 let playerHP = 50;
 let attackCount = 0;
 let momentum = 0;
-let diceRotation = 0;
+// let diceRotation = 0;
 let diceDisplay = document.querySelector("#dice")
 let gameOverScreen = document.querySelector("#gameOverScreen")
 let gameOverText = document.querySelector("#gameOverText")
@@ -30,8 +30,8 @@ function attack(){
 
     enemyHP -= playerAttackRandom;
     diceDisplay.setAttribute("src", "dice/dice" + parseInt(playerAttackRandom) + ".svg");
-    diceRotation += 30;
-    diceDisplay.style.rotate = diceRotation+deg;
+    // diceRotation += 30;
+    // diceDisplay.style.rotate = diceRotation+'deg';
     enemyHealth.style.width = enemyHP*2 + "%";
 
     console.log("PlayerDmg = " + playerAttackRandom)
@@ -42,7 +42,7 @@ function attack(){
     }
 
     attackCount++
-    newTurn();
+    enemyTurn();
 }
 
 function enemyTurn(a){
@@ -69,17 +69,17 @@ function block(){
 }
 
 function gameOver(a){
-    if(a==="lose"){
-        gameOverScreen.style.display="block"
-        gameOverText.innerHTML = "You Lost!"
-        playerHealth.style.width = "0%"
-    }
+    // if(a==="lose"){
+    //     gameOverScreen.style.display="block"
+    //     gameOverText.innerHTML = "You Lost!"
+    //     playerHealth.style.width = "0%"
+    // }
     
-    else{
+    // else{
         gameOverScreen.style.display="block"
         gameOverText.innerHTML = "You Win!"
         enemyHealth.style.width = "0%";
-    }
+    // }
 }
 
 function gameOverHide(){
