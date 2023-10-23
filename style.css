@@ -7,6 +7,7 @@
     top: 85%;
     left: 65%;
     transform: translate(-50%, -50%);
+    rotate: 0deg;
     transform-origin: center;
     transition: all 0.5s;
 }
