@@ -31,7 +31,7 @@ function attack(a){
     enemyHP -= playerAttackRandom;
     diceDisplay.setAttribute("src", "dice/dice" + parseInt(playerAttackRandom) + ".svg");
     diceRotation += 30;
-    diceDisplay.style.rotate = diceRotation+deg;
+    diceDisplay.style.rotate = diceRotation+'deg';
     enemyHealth.style.width = enemyHP*2 + "%";
 
     console.log("PlayerDmg = " + playerAttackRandom)
