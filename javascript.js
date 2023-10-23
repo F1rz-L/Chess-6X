@@ -12,7 +12,7 @@ function newTurn(){
     
 }
 
-function attack(a){
+function attack(){
     let playerAttackRandom = Math.floor(Math.random() * 6 + 1)
     
     if(attackCount>=3){
@@ -56,7 +56,7 @@ function enemyTurn(a){
     playerHealth.style.width = playerHP*2 + "%";
 
     if(playerHP<1){
-        gameOver("lose");
+        gameOver();
     }
 }
 
