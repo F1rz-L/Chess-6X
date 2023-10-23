@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chess 6X</title>
@@ -24,6 +27,10 @@
         <img src="/chess/chess1.svg" alt="" class="enemyAvatar">
         <div id="enemyHealthbar">
             <div id="enemyHealth"></div>
+        </div>
+        <div id="gameOverScreen">
+            <h1 id="gameOverText"></h1>
+            <button id="playAgain" onclick="gameOverHide()">Play Again</button>
         </div>
     </div>
     
